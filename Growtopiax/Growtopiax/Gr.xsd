@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="polleryDataSet" targetNamespace="http://tempuri.org/polleryDataSet.xsd" xmlns:mstns="http://tempuri.org/polleryDataSet.xsd" xmlns="http://tempuri.org/polleryDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" GeneratorFunctionsComponentClassName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" UserFunctionsComponentName="QueriesTableAdapter" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="polleryConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="polleryConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Growtopiax.Properties.Settings.GlobalReference.Default.polleryConnectionString" Provider="MySql.Data.MySqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="polleryConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="polleryConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Growtopiax.Properties.Settings.GlobalReference.Default.polleryConnectionString1" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="dbAltanb1337TableAdapter" GeneratorDataComponentClassName="dbAltanb1337TableAdapter" Name="dbAltanb1337" UserDataComponentName="dbAltanb1337TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="polleryConnectionString1 (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `ID`, `packet`, `ip`, `date`, `hacked` FROM `dbAltanb1337`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="packet" DataSetColumn="packet" />
+              <Mapping SourceColumn="ip" DataSetColumn="ip" />
+              <Mapping SourceColumn="date" DataSetColumn="date" />
+              <Mapping SourceColumn="hacked" DataSetColumn="hacked" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="polleryDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="polleryDataSet" msprop:Generator_UserDSName="polleryDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dbAltanb1337" msprop:Generator_TableClassName="dbAltanb1337DataTable" msprop:Generator_TableVarName="tabledbAltanb1337" msprop:Generator_TablePropName="dbAltanb1337" msprop:Generator_RowDeletingName="dbAltanb1337RowDeleting" msprop:Generator_RowChangingName="dbAltanb1337RowChanging" msprop:Generator_RowEvHandlerName="dbAltanb1337RowChangeEventHandler" msprop:Generator_RowDeletedName="dbAltanb1337RowDeleted" msprop:Generator_UserTableName="dbAltanb1337" msprop:Generator_RowChangedName="dbAltanb1337RowChanged" msprop:Generator_RowEvArgName="dbAltanb1337RowChangeEvent" msprop:Generator_RowClassName="dbAltanb1337Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="packet" msprop:Generator_ColumnVarNameInTable="columnpacket" msprop:Generator_ColumnPropNameInRow="packet" msprop:Generator_ColumnPropNameInTable="packetColumn" msprop:Generator_UserColumnName="packet" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="65535" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ip" msprop:Generator_ColumnVarNameInTable="columnip" msprop:Generator_ColumnPropNameInRow="ip" msprop:Generator_ColumnPropNameInTable="ipColumn" msprop:Generator_UserColumnName="ip" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="65535" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="date" msprop:Generator_ColumnVarNameInTable="columndate" msprop:Generator_ColumnPropNameInRow="date" msprop:Generator_ColumnPropNameInTable="dateColumn" msprop:Generator_UserColumnName="date" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="65535" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hacked" msprop:Generator_ColumnVarNameInTable="columnhacked" msprop:Generator_ColumnPropNameInRow="hacked" msprop:Generator_ColumnPropNameInTable="hackedColumn" msprop:Generator_UserColumnName="hacked" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:dbAltanb1337" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
